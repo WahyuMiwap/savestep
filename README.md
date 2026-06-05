@@ -101,7 +101,15 @@ lib/
 
 | Dashboard | Keuangan | Tabungan |
 |:---:|:---:|:---:|
-| Halaman beranda dengan ringkasan dan cuaca | Pencatatan pemasukan & pengeluaran | Target tabungan dengan progress visual |
+| <img src="screenshot/home.jpg" width="250"> | <img src="screenshot/finnace.jpg" width="250"> | <img src="screenshot/saving.jpg" width="250"> |
+| **Home / Dashboard** | **Catatan Keuangan** | **Target Tabungan** |
+
+<br>
+
+| Planner / Notes | Profil Pengguna |
+|:---:|:---:|
+| <img src="screenshot/notes.jpg" width="250"> | <img src="screenshot/profile.jpg" width="250"> |
+| **Planner & Catatan** | **Pengaturan Profil & Tema** |
 
 ---
 
