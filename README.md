@@ -180,15 +180,16 @@ savestep/
 
 ---
 
-## 👨‍💻 Developer
+## 👨‍💻 Developers
 
-| | |
-|:---|:---|
-| **Nama** | Wahyu Miwap |
-| **GitHub** | [@WahyuMiwap](https://github.com/WahyuMiwap) |
-| **Mata Kuliah** | Pemrograman Mobile (Flutter) |
+| No. | Nama Developer |
+|:---:|:---|
+| 1 | **Muhammad Wahyu Firmansyah** |
+| 2 | **Raditya Dinantara Yudha** |
+| 3 | **Muhammad Raffi Firmansyah** |
 
----
+**Mata Kuliah:** Pemrograman Mobile (Flutter)
+----
 
 <div align="center">
 
