@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "558035200930",
+    "project_id": "savestep",
+    "storage_bucket": "savestep.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558035200930:android:7c4a816fc804eb954c60fb",
+        "android_client_info": {
+          "package_name": "com.example.savestep"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "558035200930-nhi63qck5cm1npkdd1be6h0l2etn3ppb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.savestep",
+            "certificate_hash": "987e9157370d9dff0e796e52cb5745b2a71fae4e"
+          }
+        },
+        {
+          "client_id": "558035200930-6pakjtssduqm39frhntoa9240fmda57v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWvnchbs3eVOmrkxopCQdWmU2o_lTk9ts"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "558035200930-6pakjtssduqm39frhntoa9240fmda57v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
