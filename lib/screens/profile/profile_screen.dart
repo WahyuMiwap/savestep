@@ -434,6 +434,10 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
     final user = authService.currentUser;
     final email = user?.email ?? 'Tidak ada email';
     final currentDisplayName = user?.displayName ?? 'User';
+    String displayUserName = currentDisplayName;
+    if (displayUserName.length > 10) {
+      displayUserName = '${displayUserName.substring(0, 8)}...';
+    }
     final profileImagePath = ref.watch(profileImageProvider);
 
     // Ambil data statistik Weather
@@ -614,7 +618,7 @@ class _ProfileScreenState extends ConsumerState<ProfileScreen> {
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                currentDisplayName,
+                                displayUserName,
                                 style: TextStyle(
                                   fontSize: 26,
                                   fontWeight: FontWeight.bold,

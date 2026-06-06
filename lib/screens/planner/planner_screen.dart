@@ -395,23 +395,45 @@ class _PlannerScreenState extends ConsumerState<PlannerScreen> {
         
         // List View
         Expanded(
-          child: ListView(
-            key: const ValueKey('NotesList'),
-            padding: const EdgeInsets.symmetric(horizontal: 24),
-            children: [
-              if (overdueNotes.isNotEmpty) 
-                _buildExpandableSection('Sudah Terlewat', overdueNotes, color: Colors.red),
-              if (todayNotes.isNotEmpty) 
-                _buildExpandableSection('Hari ini', todayNotes),
-              if (upcomingNotes.isNotEmpty) 
-                _buildExpandableSection('Mendatang', upcomingNotes),
-              if (otherNotes.isNotEmpty) 
-                _buildExpandableSection('Lainnya', otherNotes),
-              if (completedNotes.isNotEmpty) 
-                _buildExpandableSection('Selesai', completedNotes, color: AppColors.primaryPurple, initExpanded: false),
-              const SizedBox(height: 80),
-            ],
-          ),
+          child: filteredNotes.isEmpty
+              ? Center(
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(Icons.edit_document,
+                          size: 56, color: Colors.grey.shade300),
+                      const SizedBox(height: 12),
+                      Text(
+                        'Belum ada catatan',
+                        style:
+                            TextStyle(color: Colors.grey.shade500, fontSize: 15),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        'Tekan + untuk menambahkan',
+                        style:
+                            TextStyle(color: Colors.grey.shade400, fontSize: 13),
+                      ),
+                    ],
+                  ),
+                )
+              : ListView(
+                  key: const ValueKey('NotesList'),
+                  padding: const EdgeInsets.symmetric(horizontal: 24),
+                  children: [
+                    if (overdueNotes.isNotEmpty) 
+                      _buildExpandableSection('Sudah Terlewat', overdueNotes, color: Colors.red),
+                    if (todayNotes.isNotEmpty) 
+                      _buildExpandableSection('Hari ini', todayNotes),
+                    if (upcomingNotes.isNotEmpty) 
+                      _buildExpandableSection('Mendatang', upcomingNotes),
+                    if (otherNotes.isNotEmpty) 
+                      _buildExpandableSection('Lainnya', otherNotes),
+                    if (completedNotes.isNotEmpty) 
+                      _buildExpandableSection('Selesai', completedNotes, color: AppColors.primaryPurple, initExpanded: false),
+                    const SizedBox(height: 80),
+                  ],
+                ),
         ),
       ],
     );

@@ -269,7 +269,10 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     final user = authService.currentUser;
-    final displayName = user?.displayName ?? 'User';
+    String displayName = user?.displayName ?? 'User';
+    if (displayName.length > 10) {
+      displayName = '${displayName.substring(0, 8)}...';
+    }
     final weatherState = ref.watch(weatherProvider);
     final cityName = weatherState.data?.cityName ?? 'Jakarta';
     final profileImagePath = ref.watch(profileImageProvider);
